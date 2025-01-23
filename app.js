@@ -4,8 +4,8 @@ const mongoose = require('mongoose')
 const app = express()
 app.use(express.json())
 const { v4: uuidv4 } = require("uuid")
-
-mongoose.connect("mongodb://localhost:27017/expenses").then(() => {
+//Connection with MongoDB atlas
+mongoose.connect("mongodb+srv://santhoshkumar:Santhosh@cluster0.mzduz.mongodb.net/expenses").then(() => {
     console.log("Connected to MongoDB")
 })
 
